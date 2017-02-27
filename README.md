@@ -3,6 +3,8 @@ django-files-widget
 
 Django AJAX form widgets and model fields for multiple files/images upload with progress bar
 
+Fork from https://github.com/TND/django-files-widget and update to Django >= 1.9
+
 __This is currently an alpha release. Not all functionality is there, only `ImageField` and `ImagesField` have been implemented and there is not yet enough error handling.__
 
 Features
@@ -40,17 +42,17 @@ Quick Start
 
 ### Requirements ###
 
-- Django 1.5 or later
+- Django >= 1.9
 - [sorl-thumbnail](https://github.com/sorl/sorl-thumbnail)
 - [Pillow](https://github.com/python-imaging/Pillow) (or PIL)
 - Unix/Linux (file saving uses `os.link()`)
-- jQuery 1.7 or later
+- jQuery >= 1.7
 - jQuery UI
 - [jQuery File Upload](https://github.com/blueimp/jQuery-File-Upload) (included)
 
 ### Install ###
 
-    pip install git+git://github.com/TND/django-files-widget.git
+    pip install git+git://github.com/AlexVFornazieri/django-files-widget.git
 
 ### In `settings.py` ###
 
