@@ -1,11 +1,8 @@
-try:
-    from django.conf.urls.defaults import patterns, url
-except:
-    from django.conf.urls import patterns, url
+from django.conf.urls import url
 
-from django.conf import settings
+import topnotchdev.files_widget.views as widget_views
 
-urlpatterns = patterns("topnotchdev.files_widget.views",
-    url(u'^upload/$', "upload", name="files_widget_upload"),
-    url(u'^thumbnail-url/$', "thumbnail_url", name="files_widget_get_thumbnail_url"),
-)
+urlpatterns = [
+    url(u'^upload/$', widget_views.upload, name="files_widget_upload"),
+    url(u'^thumbnail-url/$', widget_views.thumbnail_url, name="files_widget_get_thumbnail_url"),
+]
